@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRPGProject", "CSharpRPGProject\CSharpRPGProject.csproj", "{363F949B-A523-4FB1-BB2B-934CED4FDB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{12F96E03-D65F-45BA-B271-78C672122FE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{363F949B-A523-4FB1-BB2B-934CED4FDB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363F949B-A523-4FB1-BB2B-934CED4FDB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363F949B-A523-4FB1-BB2B-934CED4FDB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363F949B-A523-4FB1-BB2B-934CED4FDB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F96E03-D65F-45BA-B271-78C672122FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F96E03-D65F-45BA-B271-78C672122FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F96E03-D65F-45BA-B271-78C672122FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F96E03-D65F-45BA-B271-78C672122FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F908E24-AE33-40BA-B7A2-EDF9B7B17BCF}
+	EndGlobalSection
+EndGlobal
