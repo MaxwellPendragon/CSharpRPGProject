@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRPGProject", "CSharpR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{12F96E03-D65F-45BA-B271-78C672122FE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEngine", "TestEngine\TestEngine.csproj", "{486B9373-F36E-4ABC-9B75-9B1D14B81B54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{12F96E03-D65F-45BA-B271-78C672122FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12F96E03-D65F-45BA-B271-78C672122FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12F96E03-D65F-45BA-B271-78C672122FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486B9373-F36E-4ABC-9B75-9B1D14B81B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486B9373-F36E-4ABC-9B75-9B1D14B81B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486B9373-F36E-4ABC-9B75-9B1D14B81B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486B9373-F36E-4ABC-9B75-9B1D14B81B54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

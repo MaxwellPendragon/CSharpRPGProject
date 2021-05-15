@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Engine.ViewModels;
+using Engine.EventArgs;
 
 namespace CSharpRPGProject
 {
@@ -21,13 +22,13 @@ namespace CSharpRPGProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GameSession _gameSession;
+        private readonly GameSession _gameSession = new GameSession();
 
         public MainWindow()
         {
             InitializeComponent();
 
-            _gameSession = new GameSession();
+            _gameSession.OnMessageRaised += OnGameMessageRaised;
 
             DataContext = _gameSession;
         }
@@ -46,6 +47,25 @@ namespace CSharpRPGProject
         private void OnClick_MoveSouth(object sender, RoutedEventArgs e)
         {
             _gameSession.MoveSouth();
+        }
+
+        private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
+        {
+            _gameSession.AttackCurrentMonster();
+        }
+
+        private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
+        {
+            GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
+            GameMessages.ScrollToEnd();
+        }
+
+        private void OnClick_DisplayTradeScreen(object sender, RoutedEventArgs e)
+        {
+            TradeScreen tradeScreen = new TradeScreen();
+            tradeScreen.Owner = this;
+            tradeScreen.DataContext = _gameSession;
+            tradeScreen.ShowDialog();
         }
     }
 }
